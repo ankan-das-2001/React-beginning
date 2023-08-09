@@ -1,11 +1,9 @@
-import React from "react";
-import "./style.css";
+import React, { useState } from 'react';
+import './style.css';
+import SignIn from './components/signUp';
 
 export default function App() {
-  return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
-  );
+  const [count, setCount] = useState(0);
+
+  return <SignIn />;
 }
